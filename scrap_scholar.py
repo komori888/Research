@@ -43,7 +43,7 @@ def save_to_csv(data, filename, mode='w'):      #指定されたデータをCSV�
 keyword = input("検索したいキーワードを入力してください: ")
 num_articles = int(input("取得したい論文数を入力してください: "))
 
-# 日時付きファイル名
+# ファイル名の指定(日時)
 current_datetime = datetime.now().strftime("%Y%m%d_%H%M%S")
 csv_filename = f"scholar_articles_{keyword.replace(' ', '_')}_{current_datetime}.csv"
 
